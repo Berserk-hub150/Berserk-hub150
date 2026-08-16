@@ -10,3 +10,4 @@ Mi piace collaborare con la community developer e contribuire a progetti open so
 * 🌍 **[UtilWeb Open Data](https://github.com/vandaumm/utilweb-open-data)**
 * ⚡ **[Hiero SDK Python](https://github.com/hiero-ledger/hiero-sdk-python)** — contributor, PR [#2530](https://github.com/hiero-ledger/hiero-sdk-python/pull/2530) merged
 * 🎓 **[Moodle AI Skill Navigator](https://github.com/Berserk-hub150/moodle-ai-skill-navigator)** — progetto open source personale
+* 🛡️ **[SkillHawk](https://github.com/Berserk-hub150/skillhawk)** — progetto open source personale, security scanner per AI Agent Skills, `SKILL.md` e configurazioni MCP
