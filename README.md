@@ -2,6 +2,7 @@
 
 Mi piace collaborare con la community developer e contribuire a progetti open source, confrontandomi con codebase, tecnologie e workflow differenti.
 
+* 🏛️ **[Apache Fineract Backoffice UI](https://github.com/apache/fineract-backoffice-ui)** — contributor, contributo [#345](https://github.com/apache/fineract-backoffice-ui/pull/345) integrato nel progetto tramite PR [#389](https://github.com/apache/fineract-backoffice-ui/pull/389) merged
 * 🌐 **[OWASP Nest](https://github.com/OWASP/Nest/releases/tag/26.4.6)**
 * 🍅 **[PomoTracker](https://github.com/viodid/PomoTracker/releases/tag/v1.3.0)**
 * 🔍 **[BlazeUp-AI / Observal](https://github.com/BlazeUp-AI/Observal)**
