@@ -1,16 +1,3 @@
-### 🤝 Contributi Open Source
-
-Mi piace collaborare con la community developer e contribuire a progetti open source, confrontandomi con codebase, tecnologie e workflow differenti.
-
-* 🏛️ **[Apache Fineract Backoffice UI](https://github.com/apache/fineract-backoffice-ui)** — contributor, contributo [#345](https://github.com/apache/fineract-backoffice-ui/pull/345) integrato nel progetto tramite PR [#389](https://github.com/apache/fineract-backoffice-ui/pull/389) merged
-* 🌐 **[OWASP Nest](https://github.com/OWASP/Nest/releases/tag/26.4.6)**
-* 🍅 **[PomoTracker](https://github.com/viodid/PomoTracker/releases/tag/v1.3.0)**
-* 🔍 **[BlazeUp-AI / Observal](https://github.com/BlazeUp-AI/Observal)**
-* 🎌 **[Kana Dojo](https://github.com/lingdojo/kana-dojo)**
-* 🛠️ **[Repath Studio](https://github.com/repath-studio/repath-studio)**
-* 🌍 **[UtilWeb Open Data](https://github.com/vandaumm/utilweb-open-data)**
-* ⚡ **[Hiero SDK Python](https://github.com/hiero-ledger/hiero-sdk-python)** — contributor, PR [#2530](https://github.com/hiero-ledger/hiero-sdk-python/pull/2530) merged
+### STAR MY REPO -> 
 * 🎓 **[Moodle AI Skill Navigator](https://github.com/Berserk-hub150/moodle-ai-skill-navigator)** — progetto open source personale
 * 🛡️ **[SkillHawk](https://github.com/Berserk-hub150/skillhawk)** — progetto open source personale, security scanner per AI Agent Skills, `SKILL.md` e configurazioni MCP
-* 🧩 **[getkin / kin-openapi](https://github.com/getkin/kin-openapi)** — contributor, PR [#1249](https://github.com/getkin/kin-openapi/pull/1249) merged
-* 🪟 **[Microsoft / o365-moodle](https://github.com/microsoft/o365-moodle)** — contributor, contributo [#3411](https://github.com/microsoft/o365-moodle/pull/3411) accettato dal maintainer e portato nei branch di release
