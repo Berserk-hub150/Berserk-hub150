@@ -1,0 +1,32 @@
+name: Build HQ profile banner
+
+on:
+  push:
+    branches:
+      - tmp-hq-banner-upload
+    paths:
+      - '.github/workflows/build-hq-banner.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: tmp-hq-banner-upload
+      - name: Decode banner
+        run: |
+          mkdir -p assets
+          cat .banner-upload/hq*.b64 | base64 --decode > assets/star-my-repo-hq.webp
+          echo "28202ded32daef6f50d9d150162158cfcad8536775b0ab6240b1ed7393f7e3a7  assets/star-my-repo-hq.webp" | sha256sum -c -
+          file assets/star-my-repo-hq.webp
+      - name: Commit banner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/star-my-repo-hq.webp
+          git commit -m "Build sharp profile banner"
+          git push origin HEAD:tmp-hq-banner-upload
