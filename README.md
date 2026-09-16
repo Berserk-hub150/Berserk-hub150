@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/star-my-repo-hq.webp" alt="STAR MY REPO" width="100%">
+  <img src="assets/asse.png" alt="STAR MY REPO" width="100%">
 </p>
 
 * 🎓 **[Moodle AI Skill Navigator](https://github.com/Berserk-hub150/moodle-ai-skill-navigator)** — personal open-source project
