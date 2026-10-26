@@ -25,7 +25,7 @@ jobs:
       - name: Render optimized GIF and report errors
         shell: bash
         run: |
-          sudo apt-get update -qq\n          sudo apt-get install -y -qq ffmpeg\n          python -m pip install --quiet Pillow
+          python -m pip install --quiet Pillow imageio-ffmpeg
           if python scripts/render_profile_comic_gif.py > /tmp/banner_render_log.txt 2>&1; then
             cat /tmp/banner_render_log.txt
             rm -f assets/banner-render-error.txt
