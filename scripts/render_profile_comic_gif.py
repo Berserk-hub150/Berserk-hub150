@@ -32,8 +32,8 @@ OUT=ROOT/"assets/berserk-comic-banner.gif"
 tmp=ROOT/".comic-gif-frames"
 tmp.mkdir(exist_ok=True)
 STARTS=[.50,2.28,4.06,5.84]
-for frame in range(96):
- t=frame/10
+for frame in range(144):
+ t=frame/15
  im=BG.copy()
  d=ImageDraw.Draw(im,"RGBA")
  for y in range(0,H,19): d.line((0,y,W,y),fill=(255,199,24,11))
@@ -69,6 +69,6 @@ for frame in range(96):
  bar=int(max(0,min(1,(t-.4)/7.7))*(W-46))
  if bar>0:d.rectangle((23,369,23+bar,372),fill=GOLD)
  im.save(tmp/f"{frame:04d}.png")
-subprocess.run([FFMPEG,"-hide_banner","-loglevel","error","-y","-framerate","10","-i",str(tmp/"%04d.png"),"-vf","palettegen=max_colors=128:stats_mode=diff",str(tmp/"palette.png")],check=True)
-subprocess.run([FFMPEG,"-hide_banner","-loglevel","error","-y","-framerate","10","-i",str(tmp/"%04d.png"),"-i",str(tmp/"palette.png"),"-filter_complex","[0:v][1:v]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle","-gifflags","+transdiff+offsetting","-loop","0",str(OUT)],check=True)
+subprocess.run([FFMPEG,"-hide_banner","-loglevel","error","-y","-framerate","15","-i",str(tmp/"%04d.png"),"-vf","palettegen=max_colors=128:stats_mode=diff",str(tmp/"palette.png")],check=True)
+subprocess.run([FFMPEG,"-hide_banner","-loglevel","error","-y","-framerate","15","-i",str(tmp/"%04d.png"),"-i",str(tmp/"palette.png"),"-filter_complex","[0:v][1:v]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle","-gifflags","+transdiff+offsetting","-loop","0",str(OUT)],check=True)
 print(f"Created {OUT}: {OUT.stat().st_size} bytes")
