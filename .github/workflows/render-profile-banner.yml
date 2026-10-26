@@ -1,0 +1,36 @@
+name: Render animated profile banner
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/render_profile_comic_gif.py'
+      - '.github/workflows/render-profile-banner.yml'
+      - 'assets/asse.png'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Render optimized GIF
+        run: |
+          python -m pip install --quiet Pillow
+          python scripts/render_profile_comic_gif.py
+          file assets/berserk-comic-banner.gif
+          ls -lh assets/berserk-comic-banner.gif
+      - name: Commit rendered GIF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/berserk-comic-banner.gif
+          git diff --cached --quiet || (git commit -m "Render animated profile comic banner" && git push)
