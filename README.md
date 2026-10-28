@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Berserk-hub150/moodle-ai-skill-navigator">
-    <img src="assets/berserk-comic-banner.gif" alt="Build, Launch, Discover, Impact — support open source with a star" width="100%">
+    <img src="assets/Neon Pixel Coding Nightscape.png.gif" alt="Build, Launch, Discover, Impact — support open source with a star" width="100%">
   </a>
 </p>
 
